@@ -9,6 +9,7 @@ vagrant init bento/ubuntu-18.04
 作業ディレクトリに shareディレクトリ を作成
 
 Vagrantfile の書き換え
+
   ```
   config.vm.network "private_network", ip: "192.168.33.10"
   config.vm.synced_folder "./share", "/vagrant/share", type: "virtualbox"
@@ -38,3 +39,4 @@ vim test.kt
 
 kotlinc ./test.kt -include-runtime -d test.jar
 kotlin test.jar
+
