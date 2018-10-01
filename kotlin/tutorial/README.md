@@ -3,7 +3,7 @@
 ## command history
 
 - vagrant box add bento/ubuntu-18.04
-  - 3) virtualbox を選択
+  - 3\) virtualbox を選択
 - vagrant init bento/ubuntu-18.04
 
 - 作業ディレクトリに shareディレクトリ を作成
