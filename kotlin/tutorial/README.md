@@ -38,4 +38,3 @@ vim test.kt
 
 kotlinc ./test.kt -include-runtime -d test.jar
 kotlin test.jar
-
