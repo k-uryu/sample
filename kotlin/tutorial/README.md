@@ -1,4 +1,4 @@
-# Vagrant + VirtualBox で Ubuntu の環境を作って Kotlin を動かす
+# `Kotlin` を実行する
 
 ## command history
 
@@ -9,8 +9,10 @@ vagrant init bento/ubuntu-18.04
 作業ディレクトリに shareディレクトリ を作成
 
 Vagrantfile の書き換え
+  ```
   config.vm.network "private_network", ip: "192.168.33.10"
   config.vm.synced_folder "./share", "/vagrant/share", type: "virtualbox"
+  ```
 
 vagrant up
 vagrant plugin install vagrant-vbguest
@@ -28,9 +30,11 @@ sdk install java
 
 cd share
 vim test.kt
+  ```
   fun main(args: Array<String>) {
     println("Hello, World!")
   }
+  ```
 
 kotlinc ./test.kt -include-runtime -d test.jar
 kotlin test.jar
